@@ -1,0 +1,20 @@
+C#
+using System;
+
+public class UppercaseString
+{
+    public static void Main(string[] args)
+    {
+        // Prompt the user to enter a string
+        Console.WriteLine("Enter a string:");
+
+        // Read the string from the user
+        string inputString = Console.ReadLine();
+
+        // Convert the string to uppercase using ToUpper()
+        string uppercaseString = inputString.ToUpper();
+
+        // Print the uppercase string
+        Console.WriteLine("The string in uppercase is: {0}", uppercaseString);
+    }
+}

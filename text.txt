@@ -1,0 +1,46 @@
+C#
+using System;
+
+public class SortNumbers
+{
+    public static void Main(string[] args)
+    {
+        // Prompt the user to enter three numbers
+        Console.WriteLine("Enter three numbers:");
+
+        // Declare variables to store the numbers
+        double num1, num2, num3;
+
+        // Read the numbers from the user
+        num1 = Convert.ToDouble(Console.ReadLine());
+        num2 = Convert.ToDouble(Console.ReadLine());
+        num3 = Convert.ToDouble(Console.ReadLine());
+
+        // Sort the numbers using nested if statements
+        double temp;
+        if (num1 > num2)
+        {
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
+        }
+
+        if (num1 > num3)
+        {
+            temp = num1;
+            num1 = num3;
+            num3 = temp;
+        }
+
+        if (num2 > num3)
+        {
+            temp = num2;
+            num2 = num3;
+            num3 = temp;
+        }
+
+        // Print the numbers in ascending order
+        Console.WriteLine("The numbers in ascending order are:");
+        Console.WriteLine($"{num1}, {num2}, {num3}");
+    }
+}

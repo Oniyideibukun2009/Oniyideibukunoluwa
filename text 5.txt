@@ -1,0 +1,34 @@
+C#
+using System;
+
+public class ArrayInitialization
+{
+    public static void Main(string[] args)
+    {
+        // Declare an array of 50 floats
+        float[] alpha = new float[50];
+
+        // Initialize the first 25 elements with the square of the index variable
+        for (int i = 0; i < 25; i++)
+        {
+            alpha[i] = i * i;
+        }
+
+        // Initialize the last 25 elements with three times the index variable
+        for (int i = 25; i < 50; i++)
+        {
+            alpha[i] = 3 * (i - 25);
+        }
+
+        // Print the array in 10 elements per line format
+        Console.WriteLine("The array elements are:");
+        for (int i = 0; i < 50; i++)
+        {
+            Console.Write($"{alpha[i]:F2} "); // Format output to two decimal places
+            if ((i + 1) % 10 == 0) // Print a newline every 10 elements
+            {
+                Console.WriteLine();
+            }
+        }
+    }
+}
