@@ -1,0 +1,15 @@
+using System;
+
+public class UppercaseString
+{
+    public static void Main(string[] 
+    
+        Console.WriteLine("Enter a string:");
+
+        string inputString = Console.ReadLine();
+
+        string uppercaseString = inputString.ToUpper();
+
+        Console.WriteLine("The string in uppercase is: {0}", uppercaseString);
+    }
+}
